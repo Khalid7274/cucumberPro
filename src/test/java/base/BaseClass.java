@@ -45,7 +45,7 @@ public class BaseClass {
 			 WebDriverManager.chromedriver().setup();
 			 driver.set(new ChromeDriver());
 			 System.out.println(prop.getProperty("browser"));
-		 }else if(browser.equalsIgnoreCase("edge")) {
+		 }else if(browser.equalsIgnoreCase("Edge")) {
 			 WebDriverManager.edgedriver().setup();
 			 driver.set(new EdgeDriver());
 		 }else if(browser.equalsIgnoreCase("FireFox")) {
