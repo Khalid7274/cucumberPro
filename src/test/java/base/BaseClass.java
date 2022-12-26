@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -42,11 +43,14 @@ public class BaseClass {
 		
 		 if(browser.equalsIgnoreCase("Chrome")) {
 			 WebDriverManager.chromedriver().setup();
-			 driver.set(new ChromeDriver(options));
+			 driver.set(new ChromeDriver());
 			 System.out.println(prop.getProperty("browser"));
 		 }else if(browser.equalsIgnoreCase("edge")) {
 			 WebDriverManager.edgedriver().setup();
-			 driver.set(new EdgeDriver(options));
+			 driver.set(new EdgeDriver());
+		 }else if(browser.equalsIgnoreCase("FireFox")) {
+			 WebDriverManager.firefoxdriver().setup();
+			 driver.set(new FirefoxDriver());
 		 }
 		 
 		 
