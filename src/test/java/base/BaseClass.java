@@ -32,7 +32,7 @@ public class BaseClass {
 		EdgeOptions edgeOptions = new EdgeOptions();
 		edgeOptions.addArguments("--disable-dev-shm-usage");
 		edgeOptions.addArguments("--no-sandbox");
-		edgeOptions.setHeadless(true);
+		
 		
 		ChromeOptions options = new ChromeOptions();
 		//options.addArguments("start-maximized"); // open Browser in maximized mode
